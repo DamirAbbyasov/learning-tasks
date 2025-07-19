@@ -1,0 +1,3 @@
+phrase = "Купи слона!"
+count = int(input())
+print((phrase + "\n") * count, end="")
