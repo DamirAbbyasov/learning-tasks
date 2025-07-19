@@ -1,0 +1,3 @@
+child = int(input())
+minutes = int(input())
+print(int((minutes * child) / 2))
