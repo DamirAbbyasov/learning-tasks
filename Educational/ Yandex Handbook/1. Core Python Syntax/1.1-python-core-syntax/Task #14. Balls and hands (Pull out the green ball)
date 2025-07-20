@@ -1,0 +1,4 @@
+red_balls_count = int(input())
+green_balls_count = int(input())
+blue_balls_count = int(input())
+print(f"{red_balls_count + blue_balls_count + 1}")
