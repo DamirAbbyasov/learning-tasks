@@ -1,0 +1,4 @@
+child_count = int(input())
+candy_count = int(input())
+print(int(candy_count // child_count))
+print(int(candy_count % child_count))
