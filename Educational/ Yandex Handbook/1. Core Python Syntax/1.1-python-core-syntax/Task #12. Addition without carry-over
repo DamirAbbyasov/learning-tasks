@@ -1,0 +1,5 @@
+num_1 = int(input())
+num_2 = int(input())
+print(int(f"{((num_1 // 100 + num_2 // 100) % 10)}"
+      f"{((num_1 % 100 // 10 + num_2 % 100 // 10) % 10)}"
+      f"{((num_1 % 10 + num_2 % 10) % 10)}"))
