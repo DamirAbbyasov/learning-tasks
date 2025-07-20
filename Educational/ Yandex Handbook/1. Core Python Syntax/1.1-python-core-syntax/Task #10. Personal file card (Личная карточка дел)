@@ -1,0 +1,6 @@
+name = input()
+card_number = int(input())
+print(f"Группа №{card_number // 100}. \n"
+      f"{card_number % 10}. {name}.\n"
+      f"Шкафчик: {card_number}.\n"
+      f"Кроватка: {card_number // 10 % 10}.")
