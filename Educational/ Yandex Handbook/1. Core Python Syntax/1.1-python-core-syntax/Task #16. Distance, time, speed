@@ -1,0 +1,5 @@
+storage_distance = int(input())
+store_distance = int(input())
+average_speed = int(input())
+distace_difference = abs(storage_distance - store_distance)
+print(f"{distace_difference / average_speed:.2f}")
