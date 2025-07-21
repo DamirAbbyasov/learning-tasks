@@ -1,0 +1,3 @@
+current_sum = int(input())
+last_purchase = int(input(), 2)
+print(current_sum + last_purchase)
