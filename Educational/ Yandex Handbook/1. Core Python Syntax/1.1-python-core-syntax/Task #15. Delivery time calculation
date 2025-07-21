@@ -1,0 +1,7 @@
+hours = int(input())
+minutes = int(input())
+minutes_remain = int(input())
+total_minutes = (hours * 60) + minutes + minutes_remain
+final_hours = (total_minutes // 60)
+final_minutes = (total_minutes % 60)
+print(f"{final_hours % 24:02}:{final_minutes:02}")
