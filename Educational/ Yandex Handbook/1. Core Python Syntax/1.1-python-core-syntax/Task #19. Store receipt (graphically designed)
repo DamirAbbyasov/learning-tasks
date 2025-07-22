@@ -1,0 +1,17 @@
+product_name = input()
+goods_price = int(input())
+goods_weight = int(input())
+customers_money = int(input())
+weight_str = f"{goods_weight}кг"
+price_str = f"{goods_price}руб/кг"
+weight_price_str = f"{weight_str} * {price_str}"
+cost = f"{goods_price * goods_weight}руб"
+customers_payment = f"{customers_money}руб"
+change = f"{customers_money - goods_weight * goods_price}руб"
+print(f"================Чек================ \n"
+      f"Товар:{product_name:>29} \n"
+      f"Цена:{weight_price_str:>30} \n"
+      f"Итого:{cost:>29} \n"
+      f"Внесено:{customers_payment:>27} \n"
+      f"Сдача:{change:>29} \n"
+      f"===================================")
