@@ -1,0 +1,6 @@
+average_speed1 = int(input())
+average_speed2 = int(input())
+if average_speed1 > average_speed2:
+    print('Петя')
+else:
+    print('Вася')
