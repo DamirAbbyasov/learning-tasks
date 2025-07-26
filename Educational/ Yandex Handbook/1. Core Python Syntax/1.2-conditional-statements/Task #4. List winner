@@ -1,0 +1,23 @@
+participant1 = 'Петя'
+participant2 = 'Вася'
+participant3 = 'Толя'
+
+speed1 = int(input())
+speed2 = int(input())
+speed3 = int(input())
+
+if speed1 < speed2:
+    speed1, speed2 = speed2, speed1
+    participant1, participant2 = participant2, participant1
+
+if speed1 < speed3:
+    speed1, speed3 = speed3, speed1
+    participant1, participant3 = participant3, participant1
+
+if speed2 < speed3:
+    speed2, speed3 = speed3, speed2
+    participant2, participant3 = participant3, participant2
+
+print(f"1. {participant1}")
+print(f"2. {participant2}")
+print(f"3. {participant3}")
