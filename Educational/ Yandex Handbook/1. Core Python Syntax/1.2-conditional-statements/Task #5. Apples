@@ -1,0 +1,13 @@
+petya = 7
+vasya = 6
+
+petya = petya - 3 + 2
+vasya = vasya + 5 - 2
+
+petya += int(input())
+vasya += int(input())
+
+if petya > vasya:
+    print('Петя')
+else:
+    print('Вася')
