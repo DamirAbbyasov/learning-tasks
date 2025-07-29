@@ -1,0 +1,17 @@
+number1 = int(input())
+number2 = int(input())
+number3 = int(input())
+
+n1d1 = number1 // 10
+n1d2 = number1 % 10
+
+n2d1 = number2 // 10
+n2d2 = number2 % 10
+
+n3d1 = number3 // 10
+n3d2 = number3 % 10
+
+if (n1d1 == n2d1 or n1d1 == n1d2) and (n1d1 == n3d1 or n1d1 == n3d2):
+    print(n1d1)
+elif (n1d2 == n2d1 or n1d2 == n1d2) and (n1d2 == n3d1 or n1d2 == n3d2):
+    print(n1d2)
