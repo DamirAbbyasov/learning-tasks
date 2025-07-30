@@ -1,0 +1,37 @@
+number = int(input())
+
+a = number // 100
+b = number // 10 % 10
+c = number % 10
+
+valid_numbers = []
+
+d1 = int(f'{a}{b}')
+if a != 0:
+    valid_numbers.append(d1)
+
+d2 = int(f'{a}{c}')
+if a != 0:
+    valid_numbers.append(d2)
+
+d3 = int(f'{b}{a}')
+if b != 0:
+    valid_numbers.append(d3)
+
+d4 = int(f'{b}{c}')
+if b != 0:
+    valid_numbers.append(d4)
+
+d5 = int(f'{c}{a}')
+if c != 0:
+    valid_numbers.append(d5)
+
+d6 = int(f'{c}{b}')
+if c != 0:
+    valid_numbers.append(d6)
+
+min_d = min(valid_numbers)
+max_d = max(valid_numbers)
+
+if min_d >= 10 and max_d >= 10:
+    print(f'{min_d} {max_d}')
