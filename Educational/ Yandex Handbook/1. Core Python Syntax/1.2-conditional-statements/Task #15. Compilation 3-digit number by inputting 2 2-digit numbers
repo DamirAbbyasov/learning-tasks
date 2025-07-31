@@ -1,0 +1,18 @@
+num1 = int(input())
+num2 = int(input())
+
+n1d1 = num1 // 10
+n1d2 = num1 % 10
+
+n2d1 = num2 // 10
+n2d2 = num2 % 10
+
+max_d = max(n1d1, n1d2, n2d1, n2d2)
+min_d = min(n1d1, n1d2, n2d1, n2d2)
+
+sum_others = (n1d1 + n1d2 + n2d1 + n2d2) - (max_d + min_d)
+
+if sum_others >= 10:
+    print(f'{max_d}{sum_others % 10}{min_d}')
+else:
+    print(f'{max_d}{sum_others}{min_d}')
