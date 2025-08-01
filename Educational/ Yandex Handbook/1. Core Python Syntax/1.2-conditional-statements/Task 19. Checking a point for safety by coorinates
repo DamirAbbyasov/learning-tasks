@@ -1,0 +1,18 @@
+x = float(input())
+y = float(input())
+r = 10
+
+if x ** 2 + y ** 2 > r ** 2:
+    print('Вы вышли в море и рискуете быть съеденным акулой!')
+else:
+    inside_quicksand = (
+        y >= ((x + 1) ** 2 - 36) / 4
+        and y <= 5
+        and x ** 2 + y ** 2 <= 25
+        and y <= (5 * x + 35) / 3
+    )
+
+    if inside_quicksand:
+        print('Опасность! Покиньте зону как можно скорее!')
+    else:
+        print('Зона безопасна. Продолжайте работу.')
