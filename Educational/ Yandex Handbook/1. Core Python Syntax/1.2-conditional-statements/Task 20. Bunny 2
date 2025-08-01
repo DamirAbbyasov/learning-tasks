@@ -1,0 +1,18 @@
+s1 = input()
+s2 = input()
+s3 = input()
+
+result = ""
+
+if "зайка" in s1:
+    result = s1
+
+if "зайка" in s2:
+    if result == "" or s2 < result:
+        result = s2
+
+if "зайка" in s3:
+    if result == "" or s3 < result:
+        result = s3
+
+print(result, len(result))
