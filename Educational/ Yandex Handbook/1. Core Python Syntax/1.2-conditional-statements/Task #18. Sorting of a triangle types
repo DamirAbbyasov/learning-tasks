@@ -1,0 +1,14 @@
+side1 = int(input())
+side2 = int(input())
+side3 = int(input())
+
+max_side = max(side1, side2, side3)
+min_side = min(side1, side2, side3)
+other_side = (side1 + side2 + side3) - (max_side + min_side)
+
+if min_side ** 2 + other_side ** 2 == max_side ** 2:
+    print('100%')
+elif min_side ** 2 + other_side ** 2 < max_side ** 2:
+    print('велика')
+else:
+    print('крайне мала')
