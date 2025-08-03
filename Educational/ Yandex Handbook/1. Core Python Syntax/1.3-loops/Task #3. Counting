@@ -1,0 +1,5 @@
+first_d = int(input())
+last_d = int(input())
+
+for i in range(first_d, last_d + 1):
+    print(i, end=" ")
