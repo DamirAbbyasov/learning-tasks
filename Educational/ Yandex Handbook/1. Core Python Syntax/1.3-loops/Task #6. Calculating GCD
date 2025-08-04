@@ -1,0 +1,6 @@
+first_d = int(input())
+second_d = int(input())
+
+while second_d != 0:
+    first_d, second_d = second_d, first_d % second_d
+print(first_d)
