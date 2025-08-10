@@ -1,0 +1,8 @@
+a = int(input())
+b = int(input())
+
+multiple = a * b
+
+while b != 0:
+    a, b = b, a % b
+print(int((multiple) / a))
