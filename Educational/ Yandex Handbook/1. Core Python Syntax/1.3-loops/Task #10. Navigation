@@ -1,0 +1,19 @@
+x = 0
+y = 0
+
+while True:
+    direction = input()
+    if direction == 'СТОП':
+        break
+    steps = int(input())
+
+    if direction == 'СЕВЕР':
+        y += steps
+    elif direction == 'ЮГ':
+        y -= steps
+    elif direction == 'ЗАПАД':
+        x -= steps
+    elif direction == 'ВОСТОК':
+        x += steps
+
+print(f'{y}\n{x}')
