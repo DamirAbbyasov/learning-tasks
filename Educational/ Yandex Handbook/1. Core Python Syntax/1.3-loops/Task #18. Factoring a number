@@ -1,0 +1,12 @@
+num = int(input())
+m = 2
+multipliers = []
+
+while num > 1:
+    if num % m == 0:
+        multipliers.append(m)
+        num = num // m
+    else:
+        m += 1
+
+print(" * ".join(map(str, multipliers)))
