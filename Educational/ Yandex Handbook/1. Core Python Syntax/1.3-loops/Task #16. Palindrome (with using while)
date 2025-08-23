@@ -1,0 +1,15 @@
+num = int(input())
+
+original = num
+
+m = 0
+
+while num > 0:
+    d = num % 10
+    m = m * 10 + d
+    num = num // 10
+
+if m == original:
+    print("YES")
+else:
+    print("NO")
