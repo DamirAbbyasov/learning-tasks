@@ -1,0 +1,19 @@
+low = 1
+high = 1000
+attempts = 10
+
+while attempts > 0:
+    guess = (low + high) // 2
+    print(guess)
+
+    answer = input()
+
+    if answer == "Угадал!":
+        print("Число отгадано")
+        break
+    elif answer == "Больше":
+        low = guess + 1
+    elif answer == "Меньше":
+        high = guess - 1
+
+    attempts -= 1
