@@ -1,0 +1,20 @@
+prev = 0
+bad = -1
+
+
+for index in range(int(input())):
+    block = int(input())
+    h = block % 256
+    r = (block // 256) % 256
+    m = block // (256**2)
+
+    calc_h = (37 * (m + r + prev)) % 256
+
+    if h != calc_h or h >= 100:
+        print(index)
+        break
+
+    prev = h
+
+else:
+    print(bad)
