@@ -1,0 +1,5 @@
+size = int(input())
+
+for second_m in range(1, size + 1):
+    for first_m in range(1, size + 1):
+        print(f"{first_m} * {second_m} = {first_m * second_m}")
