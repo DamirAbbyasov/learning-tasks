@@ -1,0 +1,12 @@
+size = int(input())
+count = 1
+line = 1
+
+while count <= size:
+    quantity = 1
+    while quantity <= line and count <= size:
+        print(count, end=" ")
+        count += 1
+        quantity += 1
+    print()
+    line += 1
