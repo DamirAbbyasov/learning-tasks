@@ -1,0 +1,8 @@
+result = []
+
+for quantity in range(int(input())):
+    digit = input()
+    for i in digit:
+        result.append(int(i))
+
+print(sum(result))
