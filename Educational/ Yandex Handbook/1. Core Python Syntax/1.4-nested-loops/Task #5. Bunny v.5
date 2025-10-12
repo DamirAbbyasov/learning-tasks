@@ -1,0 +1,15 @@
+result = 0
+
+for quantity in range(int(input())):
+    word = ""
+    found = False
+
+    while word != "ВСЁ":
+        word = input()
+        if word == "зайка":
+            found = True
+
+    if found:
+        result += 1
+
+print(result)
