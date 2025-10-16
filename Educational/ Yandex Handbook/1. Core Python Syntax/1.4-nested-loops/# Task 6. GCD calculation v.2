@@ -1,0 +1,13 @@
+digit_list = []
+
+for _ in range(int(input())):
+    digit = input()
+    digit_list.append(int(digit))
+
+result = digit_list[0]
+
+for number in digit_list[1:]:
+    while number != 0:
+        result, number = number, result % number
+
+print(result)
