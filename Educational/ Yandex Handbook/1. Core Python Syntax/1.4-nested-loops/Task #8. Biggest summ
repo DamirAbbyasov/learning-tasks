@@ -1,0 +1,16 @@
+n = int(input())
+biggest = 0
+winner = ""
+
+for _ in range(n):
+    name = input()
+    digit = int(input())
+    summ = 0
+    while digit > 0:
+        summ += digit % 10
+        digit //= 10
+    if summ >= biggest:
+        biggest = summ
+        winner = name
+
+print(winner)
