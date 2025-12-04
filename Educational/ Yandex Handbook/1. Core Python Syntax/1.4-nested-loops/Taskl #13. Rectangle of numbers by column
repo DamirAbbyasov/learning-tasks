@@ -1,0 +1,11 @@
+height = int(input())
+width = int(input())
+
+max_number = height * width
+digits = len(str(max_number))
+
+for h in range(height):
+    for w in range(width):
+        number = h + 1 + w * height
+        print(f"{number:>{digits}} ", end="")
+    print()
